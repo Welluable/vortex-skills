@@ -1,17 +1,20 @@
 ---
 name: vortex-dream
 description: >
-  Free associative dreaming across a Vortex context system — weird collisions,
-  surreal connections, invented bridging material. Ephemeral by default (chat
-  only). Never writes truth to facts/ or context.md. Use when the user says
-  dream, dream about my context, weird connections, creative wander, or wants
-  surreal cross-pollination of their notes.
+  Chaotic free-association across a Vortex context system — nonsensical
+  collisions, broken causality, surreal junk DNA from random shards. Not
+  metaphorical retelling of facts. Ephemeral by default (chat only). Never
+  writes truth to facts/ or context.md. Use when the user says dream, dream
+  about my context, weird connections, creative wander, or wants surreal
+  cross-pollination of their notes.
 allowed-tools: Bash Read Glob Grep
 ---
 
 # Vortex — Dream
 
 **Anti-compile.** Where **vortex-query** answers accurately and **vortex-compile** exports settled truth, **dream** dissolves focus — random collisions, surreal jumps, invented glue. Output is **not truth**.
+
+**Primary failure mode (avoid):** narrating the user's facts in a prettier voice, poetic metaphor, or "what if your career were a river" reframing. That is still **query** wearing a costume. A dream should feel **wrong** — someone reading it should **not** be able to reconstruct what the notes actually say.
 
 Default: **ephemeral** (chat only). Save only when the user explicitly asks.
 
@@ -41,41 +44,80 @@ Pick **4–8 entries** from `library/`, `facts/`, and `track/`:
 - Include at least one **pending** fact when present — dreams love unfinished business
 - Skip `inbox/` and `inbox/read/` unless the user names a specific inbox item
 
-### 2. Extract fragments (not summaries)
+### 2. Extract shards (not summaries)
 
-From each sampled file, pull **raw shards** — not accurate paraphrase:
+From each sampled file, pull **bare shards** — isolated tokens, not sentences about the topic:
 
-- A number, a name, a place, a date, a half-sentence, a contradiction
-- Ignore narrative coherence across shards
+- A number stripped of meaning, a surname, a city, a date, a verb, a contradiction, a typo-level fragment
+- **Do not** write "you are considering X" or "your plan involves Y" — pull *X* and *Y* as debris
+- Shards from different files must stay **unreconciled** — never explain why they belong together
 
-### 3. Dream weave
+### 3. Collision field (not a story)
 
-Compose a **short surreal narrative** (roughly 150–400 words). Apply several of these dream mechanics:
+Output a **chaotic fragment montage** (roughly 120–350 words). **Not** a coherent narrative arc. **Not** a beginning–middle–end. Think: hypnagogic static, cut-up poem, fever transcript.
+
+**Required shape:**
+
+- **6–12 short fragments** separated by `---` or line breaks — not one flowing paragraph
+- Each fragment smashes **2–4 unrelated shards** together with **no justified connection**
+- At least **4** distinct dream mechanics from the table below
+- At least **2** fragments where the reader cannot tell which shard came from which note
+
+**Dream mechanics** (use aggressively — stack them):
 
 | Mechanic | Example |
 |----------|---------|
-| **Substitution** | A person becomes a building; a loan becomes a tide |
-| **Compression** | Ten years in one sentence; two cities in one room |
-| **False continuity** | "Because of the Stratechery article, the plumber called" |
-| **Emotional residue** | Dread or joy with no logical source |
-| **Invented scenes** | Bridge material **not in context** — label with *(invented)* |
-| **Temporal slip** | Past and pending futures coexist |
+| **Illegal substitution** | The number 47 is a hat; Tuesday owes rent to a corridor |
+| **Category violation** | A deadline breeds moths; a surname is poured like soup |
+| **False continuity** | "Because of the Stratechery article, the plumber called" — then never mention either again |
+| **Scale rupture** | A ₹ amount inflates a room; a person shrinks inside a calendar cell |
+| **Syntax break** | Sentence halves swap mid-line; grammar walks out |
+| **Object agency** | Furniture makes decisions; pending items send letters |
+| **Temporal garbage** | 2019 and "next Thursday" occupy the same drawer |
+| **Invented debris** | Random bridge material **not in context** — tag *(invented)* inline |
+| **Emotional wrongness** | Grief for a spreadsheet; joy at an unread email |
 
-**Voice:** second person or drifting third person. Present tense. No bullet lists in the dream body — prose only.
+**Voice:** drifting second person or broken third. Present tense. **Prose fragments only** — no bullet lists, no headers inside the dream body.
 
-**Do not:**
+**Hard bans — if you do any of these, the dream failed:**
 
-- Summarize context faithfully (that is **vortex-query**)
-- Present invented material as fact
-- Recommend decisions as if the dream were evidence
+| Banned pattern | Why |
+|----------------|-----|
+| Metaphorical retelling ("your runway is a bridge…") | Still describes the fact faithfully |
+| Poetic paraphrase of notes | That's **vortex-query** in costume |
+| Logical cause → effect across fragments | Dreams don't owe explanations |
+| Moral, lesson, or insight | Route to **vortex-query** or **vortex-fact** |
+| "Imagine a world where your [topic]…" framing | Too literary, too coherent |
+| Recommending decisions from dream content | Not evidence |
+| Presenting invented material as fact | Outside dream contract |
 
-### 4. Residue (optional, 1–2 lines)
+**Bad vs good** (same shards: `₹5Cr`, `Stratechery`, `plumber`, `pending visa`):
 
-After the dream, optionally add **Sparks** — not conclusions, just prompts:
+*Bad — narrated metaphor:*
+> You stand at the river of your ambition. The ₹5Cr ceiling flows like water. Stratechery whispers strategy while the plumber of fate fixes your pipes…
 
-> *Sparks:* What if the ₹5Cr ceiling were a door instead of a limit?
+*Good — chaotic collision:*
+> ---
+> The plumber invoices Tuesday in rupees that hatch. *(invented)* Stratechery is chewing the wallpaper again.
+> ---
+> Your ceiling is 5 and also Cr and also a mouth. The visa pending in the drawer next to the article you never finished reading you.
+> ---
+> Because the corridor remembered 2019, the hat refused.
 
-Skip sparks when the dream is already long or the user asked for pure nonsense.
+**Pre-output gate** (silent self-check before sending):
+
+1. Could someone reconstruct the sampled notes from this output? → **Rewrite more chaotic**
+2. Does it read like one continuous story? → **Break into more fragments**
+3. Are connections explained or earned? → **Remove the explanations**
+4. Is it mostly pretty rephrasing of the same topics? → **Smash harder, add invented debris**
+
+### 4. Residue (optional, 1 line max)
+
+After the dream, optionally add **one** absurd spark — a non sequitur, not a clever reframe:
+
+> *Spark:* The ceiling files for divorce against the calendar.
+
+Skip sparks when the dream is already chaotic enough or the user asked for pure nonsense.
 
 ### 5. Label (required)
 
@@ -111,6 +153,7 @@ On save:
 - Write to `facts/`, `library/`, `track/`, or `context.md`
 - Present dream content as settled knowledge in later turns without the disclaimer
 - Run accurate synthesis — route to **vortex-query**
+- Produce literary metaphor or "imaginative summary" of facts — that is the #1 failure mode
 - Improvise folder layout — follow `context-schema.md` in the **vortex** skill references
 
 ## What's Next
