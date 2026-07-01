@@ -60,6 +60,7 @@ Always use the installed Vortex skills — never improvise structure:
 | vortex-fact | Log owner truth to facts/ |
 | vortex-query | Read-only search across context |
 | vortex-compile | Overwrite context.md from reconciled folders |
+| vortex-dream | Free associative dreaming (ephemeral; excludes from compile) |
 
 Install globally: `npx skills add welluable/vortex-skills -g --all -y`
 
