@@ -12,7 +12,7 @@ allowed-tools: Bash Read Write Glob Grep
 
 Set up a **context refiner** in the current workspace: a `context/` folder where you collect material, learn from it, log your own facts, track names and ideas, and compile one self-contained file for any AI.
 
-Five plain verbs after setup: **learn · fact · query · compile · dream**.
+Four plain verbs after setup: **learn · fact · query · compile**.
 
 ## Pre-flight
 
@@ -119,9 +119,9 @@ Create output directories if missing (e.g. `.cursor/rules/`).
 Show:
 
 1. **What was created** — directory tree, `.obsidian/`, agent configs
-2. **Skills installed** — list all six with install location hint (`npx skills ls -g`)
+2. **Skills installed** — list all four with install location hint (`npx skills ls -g`)
 3. **Obsidian** — open this workspace folder as a vault (already configured)
-4. **What's next** — the five verbs (below)
+4. **What's next** — the four verbs (below)
 
 ## Teach the Verbs (always end with this)
 
@@ -132,7 +132,6 @@ Show:
 | **fact**    | vortex-fact    | "Fact: I'm targeting ETA deals under ₹5Cr" · "Fact (pending): decide by Friday" |
 | **query**   | vortex-query   | "What do I know about ETA?" · "What's in my inbox?"                             |
 | **compile** | vortex-compile | "Refresh context.md"                                                            |
-| **dream**   | vortex-dream   | "Dream" · "Weird connections" · "Creative wander"                               |
 
 
 **Learn vs fact:** learn = outside world → you (library). fact = what is true for you (facts).

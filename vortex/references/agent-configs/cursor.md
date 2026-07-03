@@ -38,7 +38,6 @@ The onboarding skill should create the `.cursor/rules/` directory if it doesn't 
     | vortex-fact | "Fact: …", "Fact (pending): …" |
     | vortex-query | "What do I know about…?", "What's in my inbox?" |
     | vortex-compile | "Refresh context.md" |
-    | vortex-dream | "Dream", "Weird connections", "Creative wander" |
 
     Installed globally via: `npx skills add welluable/vortex-skills -g --all -y`
 

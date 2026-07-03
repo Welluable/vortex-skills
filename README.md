@@ -8,7 +8,7 @@ Personal context system for AI agents — collect, learn, log facts, track names
 npx skills add welluable/vortex-skills -g --all -y
 ```
 
-Installs all six skills to your detected agents (`~/.cursor/skills/`, `~/.claude/skills/`, etc.).
+Installs all five skills to your detected agents (`~/.cursor/skills/`, `~/.claude/skills/`, etc.).
 
 ### Install to specific agents
 
@@ -33,12 +33,11 @@ Or invoke `/vortex`.
 | **vortex-fact** | Fact: … |
 | **vortex-query** | What do I know about…? |
 | **vortex-compile** | Refresh context.md |
-| **vortex-dream** | Dream / weird connections |
 
 ## Update
 
 ```bash
-npx skills update vortex vortex-learn vortex-fact vortex-query vortex-compile vortex-dream -g -y
+npx skills update vortex vortex-learn vortex-fact vortex-query vortex-compile -g -y
 ```
 
 ## Layout

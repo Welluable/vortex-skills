@@ -33,7 +33,6 @@ The onboarding skill should generate a file with this structure, replacing all `
     | vortex-fact | "Fact: …", "Fact (pending): …" |
     | vortex-query | "What do I know about…?", "What's in my inbox?" |
     | vortex-compile | "Refresh context.md" |
-    | vortex-dream | "Dream", "Weird connections", "Creative wander" |
 
     Installed globally via: `npx skills add welluable/vortex-skills -g --all -y`
 

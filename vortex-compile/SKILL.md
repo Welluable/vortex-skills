@@ -55,7 +55,7 @@ Use domain-obvious labels from the user's content (e.g. career, finance, ETA) �
 | **facts/** | Decided and done facts with dates; pending facts labeled **`(pending)`** |
 | **library/** | **Summarized highlights** — one-line or short bullet per entry; not full article text |
 | **track/** | **Mention only** when referenced by included facts or library material — brief definitional bullets |
-| **insights/** | Full reports inline — **exclude** entries with `kind: dream` |
+| **insights/** | Full reports inline — **exclude** entries with `kind: dream` or `kind: spark` |
 | **Conflicts** | When facts and library disagree on the same topic, present **both values inline** at that topic |
 
 ### Exclude
@@ -81,7 +81,7 @@ Read all files in `context/library/`. Extract **key takeaways** per entry — on
 
 ### 3 — Read insights
 
-Read all files in `context/insights/`. Include full report bodies inline under relevant topic groups. **Skip** files where frontmatter has `kind: dream` or `speculative: true`.
+Read all files in `context/insights/`. Include full report bodies inline under relevant topic groups. **Skip** files where frontmatter has `kind: dream`, `kind: spark`, or `speculative: true`.
 
 ### 4 — Read track (referenced only)
 
